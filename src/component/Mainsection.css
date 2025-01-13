@@ -1,0 +1,26 @@
+.container {
+    font-family: 'Arial, sans-serif';
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  .floating-buttons button {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-link {
+    color: #000; /* Dark color for NavLink */
+    text-decoration: none;
+  }
+
+  .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: #2b2929; /* Lighter color on active/show */
+    text-decoration: underline;
+  }
+  
+  .nav-link:hover {
+    color: #2b2929; /* Slightly lighter color on hover */
+    text-decoration: underline;
+  }

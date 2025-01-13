@@ -1,22 +1,18 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import About from './Components/Pages/About';
-import './App.css';
+import Header from './component/Header';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import MainSection from './component/MainSection';
+import ClientSection from './component/ClientSection';
 
 function App() {
   return (
-    <Router>
-    <div className="App">
-      <header className="App-header">
-        <h1>Welcome to CelestiaTech</h1>
-        <p>Web Development Services & SEO</p>
-      </header>
-      <Routes>
-        <Route path="/about" element={<About />} />
-      </Routes>
+    <div>
+      <Header />
+      <MainSection />
+      <ClientSection />
     </div>
-  </Router>
-    
   );
 }
 

@@ -1,0 +1,33 @@
+/* Import Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-dark .navbar-brand {
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-part1 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ff6600; /* Black */
+}
+
+.logo-part2 {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ff6600; /* Orange */
+}
+
+.logo-tech {
+ font-weight: 600;
+  font-size: 18px;
+  color: #ff6600; /* Orange */
+}

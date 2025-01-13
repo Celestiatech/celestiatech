@@ -1,0 +1,29 @@
+.client-logos-container {
+    display: flex;
+    overflow: hidden;
+    animation: moveLeftToRight 10s linear infinite;
+    position: relative;
+}
+
+.client-logo {
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+    margin-right: 20px; /* Adjust space between logos */
+    width: 120px; /* Set the width of the logos */
+}
+
+.client-logo:hover {
+    filter: grayscale(0%);
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Animation for sliding the logos from left to right */
+@keyframes moveLeftToRight {
+    0% {
+        transform: translateX(0%);
+    }
+    
+    100% {
+        transform: translateX(50%);
+    }
+}
