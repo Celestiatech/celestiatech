@@ -1,5 +1,8 @@
 import React from 'react';
 import './Header.css'; // Import the CSS file
+import '../App.css'; // Import the global CSS file
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 const Header = () => {
   return (
@@ -8,19 +11,19 @@ const Header = () => {
         <div className="container-fluid">
           {/* Logo Section */}
           <a className="navbar-brand d-flex align-items-center" href="#">
-            <div className="logo">
-              <span className="logo-part1">CE</span>
-              <span className="logo-part2">LESTIA</span>
+            <div className="logo logo-orange">
+              <span className="logo-text">CE</span>
+              <span className="logo-text">LESTIA</span>
             </div>
-            <div className="logo">
-              <span className="logo-tech">TECH</span>
+            <div className="logo logo-orange">
+              <span className="logo-text">TECH</span>
             </div>
           </a>
 
           {/* Toggle Button for Mobile View */}
           <button
-            className="navbar-toggler"
-            type="button"
+            className="navbar-toggler" // Add this line
+            type="button" // Add this line
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
@@ -68,6 +71,9 @@ const Header = () => {
                 </ul>
               </li>
               {/* Add more dropdowns for Industries, Portfolio, Company */}
+              <li className="nav-item">
+                <a className="nav-link" href="#">Login</a>
+              </li>
             </ul>
           </div>
         </div>

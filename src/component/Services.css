@@ -1,0 +1,47 @@
+.services-section {
+  /* background-color: #f8f9fa; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.services-section .card {
+  background-color: #fff;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.services-section .card:hover {
+  transform: translateY(-10px);
+}
+
+.services-section .icon {
+  color: #ff7f50;
+}
+
+.service-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: center;
+  min-width: 150px; /* Ensure cards have a minimum width */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: #ff7f50;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 576px) {
+  .service-card {
+    margin-bottom: 20px;
+  }
+}

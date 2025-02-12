@@ -1,3 +1,19 @@
+/* Global Color Variables */
+:root {
+  --primary-color: #ff6600;
+  --secondary-color: #282c34;
+  --background-color: #f8f9fa;
+  --text-color: #ffffff;
+  --link-color: #61dafb;
+}
+
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -14,18 +30,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: var(--secondary-color);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: var(--text-color);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--link-color);
 }
 
 @keyframes App-logo-spin {
@@ -35,4 +51,37 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Global Styles */
+body {
+  max-width: 1500px;
+  margin: 0 auto !important;
+  padding: 20px;
+  font-family: 'Poppins', Arial, sans-serif; /* Update font-family */
+  background-color: var(--background-color);
+}
+
+/* Section Styles */
+
+
+/* Header Styles */
+header {
+  margin-bottom: 40px;
+}
+
+/* Navbar Styles */
+.navbar {
+  border-radius: 8px;
+}
+
+/* Logo Styles */
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.logo-text {
+  margin-right: 5px;
 }

@@ -1,0 +1,66 @@
+/* General styling for the Testimonials section */
+.testimonials-section {
+    padding: 40px 0;
+  }
+  
+  .testimonials-section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .testimonials-section p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Card layout styling */
+  .card-container {
+    position: relative;
+    margin: 0;
+    cursor: pointer;
+  }
+  
+  /* Popup styling */
+  .popup {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 90%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+  
+  /* Show popup on hover */
+  .card-container:hover .popup {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Popup text styling */
+  .popup p {
+    font-size: 0.9rem;
+    margin: 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  .popup::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent #fff transparent;
+  }
+  

@@ -30,7 +30,7 @@ const MainSection = () => {
         </Col>
 
         {/* Right Side Image */}
-        <Col xs={12} md={6} className="text-center">
+        <Col xs={12} md={5} className="text-center">
           <img
             src="/images/main-right-banner.png"
             alt="Design Services"

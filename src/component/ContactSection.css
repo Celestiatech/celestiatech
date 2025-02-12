@@ -1,0 +1,199 @@
+/* General Styles */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: #fff7f0;
+  }
+  
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    max-width: 1200px;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Left Section (Contact Info) */
+  .contact-info {
+    flex: 1;
+    padding: 20px 30px;
+    background-color: #fde9d9;
+  }
+  
+  .contact-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .contact-info p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .contact-methods {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .contact-card {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    flex: 1 1 calc(50% - 20px); /* Two columns by default */
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .contact-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-card img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Right Section (Contact Form) */
+  .contact-form {
+    flex: 1;
+    padding: 20px 30px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .phone-input {
+    display: flex;
+  }
+  
+  .phone-input select {
+    width: 80px;
+    margin-right: 10px;
+  }
+  
+  .nda-label {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .nda-label a {
+    color: #e16c3c;
+    text-decoration: none;
+  }
+  
+  .nda-label input {
+    margin-right: 5px;
+  }
+  
+  .captcha-group {
+    margin-bottom: 20px;
+  }
+  
+  .recaptcha-placeholder {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+    border-radius: 5px;
+  }
+  
+  .send-message-btn {
+    background-color: #e16c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .send-message-btn:hover {
+    background-color: #cc5b2e;
+  }
+  
+  /* Responsive Design */
+  
+  /* For tablets */
+  @media (max-width: 992px) {
+    .contact-container {
+      flex-direction: column; /* Stack sections vertically */
+    }
+  
+    .contact-info,
+    .contact-form {
+      flex: none;
+      width: 100%; /* Full width */
+    }
+  
+    .contact-card {
+      flex: 1 1 calc(50% - 10px); /* Two columns still */
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 768px) {
+    .contact-card {
+      flex: 1 1 100%; /* One column */
+    }
+  
+    .contact-info h2 {
+      font-size: 20px; /* Smaller heading */
+    }
+  
+    .contact-info p {
+      font-size: 14px;
+    }
+  
+    input,
+    textarea,
+    select {
+      font-size: 13px; /* Smaller input text */
+    }
+  
+    .send-message-btn {
+      font-size: 14px; /* Smaller button text */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .contact-info h2 {
+      font-size: 18px; /* Smaller heading for very small screens */
+    }
+  
+    .contact-card {
+      gap: 5px; /* Reduce spacing */
+      padding: 8px 10px; /* Adjust padding */
+    }
+  }
+  

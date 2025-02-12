@@ -1,0 +1,17 @@
+.text-center div:hover {
+    transform: scale(1.05);
+}
+
+.container {
+  /* ...existing styles... */
+  overflow: hidden; /* Hide scrollbar */
+}
+
+.container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+.container {
+  -ms-overflow-style: none;  /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none;  /* Hide scrollbar for Firefox */
+}

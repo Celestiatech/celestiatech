@@ -9,7 +9,7 @@
     filter: grayscale(100%);
     transition: filter 0.3s ease, transform 0.3s ease;
     margin-right: 20px; /* Adjust space between logos */
-    width: 120px; /* Set the width of the logos */
+    width: 150px; /* Set the width of the logos */
 }
 
 .client-logo:hover {

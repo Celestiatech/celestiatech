@@ -1,0 +1,51 @@
+.why-choose-us-section {
+    background-color: #fce8db;
+    border-radius: 10px;
+    padding: 40px;
+  }
+  
+  .section-title {
+    color: #ff6f61;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  .section-subtitle {
+    font-weight: 700;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .section-description {
+    color: #6c757d;
+    font-size: 1rem;
+  }
+  
+  .icon-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: none; /* Remove box shadow */
+    transition: transform 0.3s ease;
+  }
+  
+  .icon-box:hover {
+    transform: translateY(-5px);
+    box-shadow: none; /* Remove box shadow */
+  }
+  
+  .icon {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 10px;
+  }
+  
+  .icon-box h5 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .icon-box p {
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
